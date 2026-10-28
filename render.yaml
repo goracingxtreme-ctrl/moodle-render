@@ -4,7 +4,7 @@ services:
     env: image
     plan: free
     image:
-      url: docker.io/bitnami/moodle:latest
+      url: bitnami/moodle:latest
     envVars:
       - key: MOODLE_DATABASE_TYPE
         value: pgsql
