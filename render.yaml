@@ -1,7 +1,7 @@
 services:
   - type: web
     name: moodle-provas
-    env: docker
+    env: image
     plan: free
     image:
       url: docker.io/bitnami/moodle:latest
@@ -14,4 +14,3 @@ services:
         value: SuaSenhaForte123
       - key: MOODLE_EMAIL
         value: seu-email@exemplo.com
-        
