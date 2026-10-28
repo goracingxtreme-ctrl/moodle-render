@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: moodle-provas
+    env: docker
+    plan: free
+    image:
+      url: docker.io/bitnami/moodle:latest
+    envVars:
+      - key: MOODLE_DATABASE_TYPE
+        value: pgsql
+      - key: MOODLE_USERNAME
+        value: admin
+      - key: MOODLE_PASSWORD
+        value: SuaSenhaForte123
+      - key: MOODLE_EMAIL
+        value: seu-email@exemplo.com
+        
